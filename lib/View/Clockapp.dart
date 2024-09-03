@@ -9,7 +9,7 @@ class ClockMeetingPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Clock Meeting Calculator'),
+        title: Text('Clock Meeting'),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -19,7 +19,7 @@ class ClockMeetingPage extends StatelessWidget {
             TextField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                labelText: 'Time for A to cover 5 minutes (in minutes)',
+                labelText: 'Time for A(in minutes)',
                 border: OutlineInputBorder(),
               ),
               onChanged: (value) {
@@ -30,7 +30,7 @@ class ClockMeetingPage extends StatelessWidget {
             TextField(
               keyboardType: TextInputType.number,
               decoration: InputDecoration(
-                labelText: 'Time for B to cover 5 minutes (in minutes)',
+                labelText: 'Time for B(in minutes)',
                 border: OutlineInputBorder(),
               ),
               onChanged: (value) {
