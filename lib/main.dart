@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
-
-import 'ClockApp.dart';
+import 'package:get/get_navigation/src/root/get_material_app.dart';
+import 'View/Clockapp.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: const Clockapp(),
+    return GetMaterialApp(
+      title: 'Clock Meeting App',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
+      ),
+      home: ClockMeetingPage(),
     );
   }
 }
